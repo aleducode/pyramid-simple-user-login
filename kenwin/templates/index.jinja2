@@ -15,33 +15,10 @@
     }
 
 
-    .monkey::after {
-        content: '🙈';
-        --emoji-1: '🙉';
-        --emoji-2: '🙊';
-        animation-name: threeFrames;
-        animation-duration: 2s;
-    }
-
-
 
     .wave::after {
         content: '✋';
         --emoji: '👋';
-        animation-name: twoFrames;
-        animation-duration: 1s;
-    }
-
-    .inbox::after {
-        content: '📥';
-        --emoji: '📤';
-        animation-name: twoFrames;
-        animation-duration: 1s;
-    }
-
-    .vomit::after {
-        content: '🤢';
-        --emoji: '🤮';
         animation-name: twoFrames;
         animation-duration: 1s;
     }
@@ -75,5 +52,11 @@
 </div>
 {% endblock content %}
 {% block js %}
-
+<script>
+document.onreadystatechange = () => {
+    if (document.readyState === 'complete') {
+        alert('You are in session with username: {{request.user.name}}.')
+    }
+};
+</script>
 {% endblock js %}
