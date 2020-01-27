@@ -15,7 +15,6 @@
     </p>
    
     <form action="{{url}}" method="post">
-      {% csrf_token %}
       <input type="hidden" name="came_from" value="{{came_from}}">
       <div class="form-group">
         <label for="login">Username</label>
