@@ -15,6 +15,9 @@
 
     <!-- Custom styles for this scaffold -->
     <link href="{{request.static_url('kenwin:static/theme.css')}}" rel="stylesheet">
+    {% block css %}
+    
+    {% endblock css %}
 
     <!-- HTML5 shiv and Respond.js IE8 support of HTML5 elements and media queries -->
     <!--[if lt IE 9]>
@@ -54,7 +57,9 @@
       </div>
     </div>
 
-
+    {% block js %}
+    
+    {% endblock js %}
     <!-- Bootstrap core JavaScript
     ================================================== -->
     <!-- Placed at the end of the document so the pages load faster -->
