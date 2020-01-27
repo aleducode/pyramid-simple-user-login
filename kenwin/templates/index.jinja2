@@ -1,0 +1,12 @@
+{% extends "layout.jinja2" %}
+
+{% block content %}
+<div class="content">
+
+  <h1><span class="font-semi-bold">Hi {{request.user.name}} !!!</span> <a href="{{url_logout}}" class="btn btn-primary">
+      Logout</a> </h1>
+
+  <p class="lead">Welcome to a&nbsp;Pyramid application generated&nbsp;by<br><span
+      class="font-normal">Cookiecutter</span>.</p>
+</div>
+{% endblock content %}
