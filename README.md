@@ -7,9 +7,16 @@ Test aplication made with Pyramid/postgresql setup based on  [Cookie-cutter](htt
 Create the virtual enviroment and Install the dependencies.
 
 ```sh
-$ cd kenwin
+$ inside projec path (before pull)
 $ python3 -m venv env
 $ env/bin/pip install -e .
+```
+
+Create postgresql database called 'kenwin'
+
+```sh
+$ psql
+$ create database kenwin;
 ```
 
 upgrade the database using Alembic to last revision.

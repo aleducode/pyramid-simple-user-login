@@ -35,8 +35,6 @@ def upgrade():
     sa.PrimaryKeyConstraint('id', name=op.f('pk_pages')),
     sa.UniqueConstraint('name', name=op.f('uq_pages_name'))
     )
-    op.drop_index('my_index', table_name='models')
-    op.drop_table('models')
     # ### end Alembic commands ###
 
 
